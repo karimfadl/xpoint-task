@@ -2,8 +2,8 @@
 ## Task
 ### Create CloudFormation templates for:
  1. A LaunchTemplate
-   -  Use a t3.micro instance size
- 2. ASG that uses the launch template
+    * Use a t3.micro instance size
+ 3. ASG that uses the launch template
 
 ### Create a script that takes a -n & -s or -h parameter
  1. The -h parameter should emit a useful help message
