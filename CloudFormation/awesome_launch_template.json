@@ -1,0 +1,15 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Resources": {
+        "awesomeLaunchTemplate": {
+            "Type": "AWS::EC2::LaunchTemplate",
+            "Properties": {
+                "LaunchTemplateName": "awesome-LaunchTemplate",
+                "LaunchTemplateData": {
+                    "InstanceType": "t3.micro",
+                    "ImageId": "ami-06b21ccaeff8cd686"  # Replace with a suitable AMI ID for your region
+                }
+            }
+        }
+    }
+}

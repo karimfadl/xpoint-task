@@ -1,0 +1,19 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Resources": {
+        "awesomeAutoScalingGroup": {
+            "Type": "AWS::AutoScaling::AutoScalingGroup",
+            "Properties": {
+                "AutoScalingGroupName": "awesome-ASG",
+                "LaunchTemplate": {
+                    "LaunchTemplateName": "awesome-LaunchTemplate",
+                    "Version": "1"
+                },
+                "MinSize": "2",
+                "MaxSize": "2",
+                "DesiredCapacity": "2",
+                "VPCZoneIdentifier": ["subnet-dd0354b8"]  # Replace with actual subnet IDs
+            }
+        }
+    }
+}

@@ -1,0 +1,4 @@
+./cf-asg.sh -n awesome -s 2
+aws cloudformation create-stack --stack-name awesome-stack --template-body file://awesome_launch_template.json
+aws cloudformation create-stack --stack-name awesome-asg-stack --template-body file://awesome_asg_template.json
+
