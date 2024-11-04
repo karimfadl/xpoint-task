@@ -13,3 +13,12 @@
 For example, passing “awesome” as the name parameter should create an ASG with a name like “awesome-ASG” You may use any language to write the script.
 
 ## Solution
+You Can directly open `CloudFormation` folder and run the following
+```
+cd CloudFormation
+./cf-asg.sh -n awesome -s 2
+aws cloudformation create-stack --stack-name awesome-stack --template-body file://awesome_launch_template.json
+aws cloudformation create-stack --stack-name awesome-asg-stack --template-body file://awesome_asg_template.json
+```
+
+## Bonus
