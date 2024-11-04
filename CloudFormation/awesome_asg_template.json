@@ -12,7 +12,7 @@
                 "MinSize": "2",
                 "MaxSize": "2",
                 "DesiredCapacity": "2",
-                "VPCZoneIdentifier": ["subnet-dd0354b8"]  # Replace with actual subnet IDs
+                "VPCZoneIdentifier": ["subnet-0e6f7d6611e826a60"]  # Replace with actual subnet IDs
             }
         }
     }

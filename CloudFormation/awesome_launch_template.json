@@ -7,7 +7,8 @@
                 "LaunchTemplateName": "awesome-LaunchTemplate",
                 "LaunchTemplateData": {
                     "InstanceType": "t3.micro",
-                    "ImageId": "ami-06b21ccaeff8cd686"  # Replace with a suitable AMI ID for your region
+                    "ImageId": "ami-05def61c9ff65bb2b",  # Replace with a suitable AMI ID for your region
+                    "SecurityGroupIds": ["sg-0a54fc098bb451baf"]  # Replace with the security group ID from Terraform output
                 }
             }
         }

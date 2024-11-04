@@ -12,7 +12,8 @@ generate_launch_template() {
                 "LaunchTemplateName": "${1}-LaunchTemplate",
                 "LaunchTemplateData": {
                     "InstanceType": "t3.micro",
-                    "ImageId": "ami-06b21ccaeff8cd686"  # Replace with a suitable AMI ID for your region
+                    "ImageId": "ami-05def61c9ff65bb2b",  # Replace with a suitable AMI ID for your region
+                    "SecurityGroupIds": ["sg-0a54fc098bb451baf"]  # Replace with the security group ID from Terraform output
                 }
             }
         }
@@ -38,7 +39,7 @@ generate_asg_template() {
                 "MinSize": "${2}",
                 "MaxSize": "${2}",
                 "DesiredCapacity": "${2}",
-                "VPCZoneIdentifier": ["subnet-dd0354b8"]  # Replace with actual subnet IDs
+                "VPCZoneIdentifier": ["subnet-0e6f7d6611e826a60"]  # Replace with actual subnet IDs
             }
         }
     }

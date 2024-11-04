@@ -22,3 +22,19 @@ aws cloudformation create-stack --stack-name awesome-asg-stack --template-body f
 ```
 
 ## Bonus
+We can improve this solution by using some automation tools, While our Cloudformation stack need AMI and Subnet, So we Can use Packer to create a special AMI and Terraform to create a VPC with subnet.
+### Run Packer to Create a special AMI for our stack.
+```
+cd Packer
+packer build packer-template.json
+```
+Copy AMI ID output and Add it in our Cloudformation stack json file.
+### Run Terraform to create a new VPC with Subnets.
+```
+cd Terraform
+terraform init
+terraform plan
+terraform apply
+```
+Copy Public subnet output and Add it in our Cloudformation stack json file.
+
